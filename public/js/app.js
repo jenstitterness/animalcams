@@ -23,7 +23,7 @@ var setVideo = function() {
   $('body').empty().append('<video autoplay loop></video>');
 
   if (regex.test(videoList[random])) {
-    $("video").prop('type', "application/vnd.apple.mpegurl");
+    $("video").attr('type', "application/vnd.apple.mpegurl");
   }
 
   $('video').prop('src', videoList[random]);
